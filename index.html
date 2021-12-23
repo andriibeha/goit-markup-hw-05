@@ -55,12 +55,16 @@
                             букви були великі чи маленькі-->
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 
-                <button type="button" class="button primary" data-open-modal>   
+                <button type="button" class="button primary" data-modal-open>   
                     Заказать услугу
                 </button>
-                <div class="backdrop is-hidden" data-backdrop>
+                <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button data-close-modal>Close</button>
+                        <button class="modal-close" data-modal-close>
+                            <svg class="icon close">
+                                <use href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
