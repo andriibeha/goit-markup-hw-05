@@ -16,6 +16,8 @@
   --hero-gradient: rgba(47, 48, 58, 0.4);
   --primary-icon-color: #afb1b8;
   --secondary-icon-color: rgba(255, 255, 255, 0.1);
+  --before-element-not-is: rgba(33, 150, 243, 0);
+  --before-element-is: rgba(33, 150, 243, 1);
 }
 
 /*Шрифти для текстів та кольори*/
@@ -108,8 +110,36 @@ p {
   color: var(--accent-color);
 }
 
+/*Роблю лінію під текстом*/
+.site-nav .item {
+  position: relative;
+}
+
+.site-nav .link::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+
+  width: 100%;
+  border: 2px solid var(--before-element-is);
+  border-radius: 2px;
+
+  opacity: 0;
+}
+
+.site-nav .link:hover::after,
+.site-nav .link:focus::after {
+  opacity: 1;
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.site-nav .link.current::after,
+.site-nav .link.current::after {
+  opacity: 1;
 }
 
 .auth-nav .link {
