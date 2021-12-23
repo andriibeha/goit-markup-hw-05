@@ -848,10 +848,7 @@ header {
 }
 
 .card-label {
-  position: absolute;
-  top: 0;
-
-  width: 100%;
+  width: 370px;
   height: 294px;
 
   background-color: var(--cards-overlay);
