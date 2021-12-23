@@ -42,6 +42,10 @@ body {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 /*Костиль але хз як правильно забрати*/
 body li {
   list-style-type: none;
@@ -376,8 +380,7 @@ button {
   width: 100%;
 
   position: absolute;
-  /*Костиль*/
-  bottom: 7px;
+  bottom: 0;
   background-color: var(--label-bg);
 }
 
