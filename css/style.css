@@ -831,11 +831,9 @@ header {
 }
 
 /*Портфоліо Card-label*/
-.cards .item {
-  position: relative;
-}
-
 .card-label .text {
+  width: 370px;
+
   color: var(--primary-white-color);
 
   font-size: 18px;
@@ -847,7 +845,12 @@ header {
   padding-bottom: 63px;
 }
 
+.card-label-wrapper {
+  position: relative;
+}
+
 .card-label {
+  position: absolute;
   width: 370px;
   height: 294px;
 
@@ -856,11 +859,11 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  transform: translateY(294px);
+  transform: translateY(0);
+
+  overflow: hidden;
 }
 
 .cards .item:hover .card-label {
-  transform: translateY(0);
+  transform: translateY(-294px);
 }
-
-/*asdasd*/
