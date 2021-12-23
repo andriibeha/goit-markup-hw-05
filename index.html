@@ -55,9 +55,14 @@
                             букви були великі чи маленькі-->
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 
-                <button type="button" class="button primary">   
+                <button type="button" class="button primary" data-open-modal>   
                     Заказать услугу
                 </button>
+                <div class="backdrop is-hidden" data-backdrop>
+                    <div class="modal">
+                        <button data-close-modal>Close</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -371,5 +376,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
