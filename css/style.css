@@ -783,6 +783,9 @@ header {
   z-index: 10;
 
   background-color: var(--overlay);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .backdrop.is-hidden {
@@ -845,25 +848,28 @@ header {
   padding-bottom: 63px;
 }
 
-.card-label-wrapper {
+.card-link {
   position: relative;
 }
 
 .card-label {
-  position: absolute;
-  width: 370px;
   height: 294px;
-
-  background-color: var(--cards-overlay);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  transform: translateY(0);
 
   overflow: hidden;
 }
 
-.cards .item:hover .card-label {
+.card-label .text {
+  background-color: var(--cards-overlay);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards .item:hover .card-label .text {
   transform: translateY(-294px);
+}
+
+/*Даю колір який мені треба*/
+.cards-wraper p {
+  color: var(--primary-text-color);
 }
